@@ -11,6 +11,20 @@
 |
 */
 
+use App\Bear;
+use App\Tree;
+use App\Picnic;
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('eloquent', function() {
+
+	return View::make('eloquent')
+
+		->with('bears', Bear::all());
+})
+
+
+?>

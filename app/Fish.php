@@ -17,7 +17,7 @@ class Fish extends Model
 
     // DEFINE RELATIONSHIPS --------------------------------------------------
     public function bear() {
-        return $this->belongsTo('Bear');
+        return $this->belongsTo('App\Bear');
     }
 
 
