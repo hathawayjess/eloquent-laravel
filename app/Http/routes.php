@@ -19,12 +19,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('eloquent', function() {
+Route::get('eloquent', 'BearController@bear');
 
-	return View::make('eloquent')
 
-		->with('bears', Bear::all());
-})
 
 
 ?>
